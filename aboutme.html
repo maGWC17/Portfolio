@@ -34,8 +34,41 @@ li a:hover:not(.active) {
 <body>
 
 <ul>
-  <li><a class="active" href=home.html>Home</a></li>
-  <li><a href=aboutme.html>About Me</a></li>
+  <li><a href=home.html>Home</a></li>
+  <li><a <!DOCTYPE html>
+<html>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #808080;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href=home.html>Home</a></li>
+  <li><a class="active" href=aboutme.html>About Me</a></li>
   <li><a href=mywork.html>My Work</a></li>
   <li><a href=“#more”>More</a></li>
 </ul>
