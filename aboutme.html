@@ -41,7 +41,18 @@ li a:hover:not(.active) {
   <body style="background-color:#C1F1F7;">
     <h1><center>About Me</center></h1>
     <h2><center>I’m honestly either really quiet or really loud.</center></h2>
-    <center><img src="aochiheadshotforintuit.jpg" alt="Headshot" style="width:250px;height:375px;">
+    <center><img src="aochiheadshotforintuit.jpg" alt="Headshot" style="width:250px;height:375px;" onmouseover="showCaption(this)" onmouseout="hideCaption(this)">
+        <p id="caption"> </p>
+    
+        <script>
+            function showCaption(obj) {
+                obj.innerHTML = "Caption"
+            }
+            function hideCaption(obj) {
+                obj.innerHTML = " "
+            }
+        </script>
+        
 <header>
   <h1>Miranda Aochi</h1>
   <p style="font-size:100%;"><span>I am currently attending Los Gatos High School as I will be a junior in the fall.<br>I am 15-years-old and I enjoy spending time with my family and friends. 
