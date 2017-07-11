@@ -41,15 +41,15 @@ li a:hover:not(.active) {
   <body style="background-color:#C1F1F7;">
     <h1><center>About Me</center></h1>
     <h2><center>I’m honestly either really quiet or really loud.</center></h2>
-    <center><img src="aochiheadshotforintuit.jpg" alt="Headshot" style="width:250px;height:375px;" <div onmouseover="showCaption(this)" onmouseout="hideCaption(this)"> </div>>
+    <center><img src="aochiheadshotforintuit.jpg" alt="Headshot" style="width:250px;height:375px;" onmouseover="showCaption()" onmouseout="hideCaption()">
         <p id="caption"> </p>
     
         <script>
-            function showCaption(obj) {
-                obj.innerHTML = "Caption"
+            function showCaption() {
+                document.getElementById("caption").innerHTML = "Caption"
             }
-            function hideCaption(obj) {
-                obj.innerHTML = " "
+            function hideCaption() {
+                document.getElementById("caption").innerHTML = " "
             }
         </script>
         
