@@ -38,6 +38,19 @@ li a:hover:not(.active) {
     
 <body>
   <body style="background-color:#C1F1F7;">
+  <h1>Photography</h1>
+  <img src="6CTSasha.jpg" alt=“Sasha” style="width:240px;height:180.5px;" onmouseover="showCaption()" onmouseout="hideCaption()">
+        <p id="photos"> </p>        
+      <script>
+            function showCaption() {
+                document.getElementById("photos").innerHTML = "This is a triptych I took of my friend Sasha for my school's DigiPhoto class."
+            }
+            function hideCaption() {
+                document.getElementById("photos").innerHTML = " "
+            }
+        </script>
+      
+      
 </body>
   
 <html>
