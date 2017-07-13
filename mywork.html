@@ -101,7 +101,16 @@ li a:hover:not(.active) {
     
 <center>
 <img src="Beach.jpg" alt=“BeachBefore” style="width:300px;height:200px;">
-<img src="beachrecolored.jpg" alt=“BeachAfter” style="width:300px;height:200px;">
+<img src="beachrecolored.jpg" alt=“BeachAfter” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()">
+            <p id="beach"> </p>
+        <script>
+              function showCaption() {
+                  document.getElementbyID("beach").innerHTML = "This photo was taken at a beach in Santa Cruz."
+              }
+              function hideCaption() {
+                  document.getElementbyID("beach").innerHTML = " "
+              }
+       </script>
 
 </center>
     
