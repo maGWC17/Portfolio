@@ -84,7 +84,15 @@ li a:hover:not(.active) {
 <center><img src="Screen Shot 2017-07-13 at 9.33.20 AM.png" alt="ElephantCode" style="width:600px;height:400px;"></center>
    
 <center>
-<img src="elephant2.jpg" alt=“ElephantBefore” style="width:300px;height:200px;">
+<img src="elephant2.jpg" alt=“ElephantBefore” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()">
+         <p id="elephant"> </p>        
+     <script>
+            function showCaption() {
+                document.getElementById("elephant").innerHTML = "This photo was taken on a field trip to Monterey Zoo & Vision Quest."
+            }
+            function hideCaption() {
+                document.getElementById("elephant").innerHTML = " "
+            }
 <img src="elephantrecolored.jpg" alt=“ElephantAfter” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()">
             <p id="elephant"> </p>        
       <script>
