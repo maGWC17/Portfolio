@@ -99,9 +99,16 @@ li a:hover:not(.active) {
 <center><img src="Screen Shot 2017-07-13 at 9.32.18 AM.png" alt="BeachCode" style="width:600px;height:400px;"></center>
     
 <center>
-<img src="Beach.jpg" alt=“BeachBefore” style="width:300px;height:200px;">
-<img src="beachrecolored.jpg" alt=“BeachAfter” style="width:300px;height:200px;">
-
+<img src="Beach.jpg" alt=“BeachBefore” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()"> <img src="beachrecolored.jpg" alt=“BeachAfter” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()">
+<p id="beach"> </p>        
+     <script>
+            function showCaption() {
+                document.getElementById("beach").innerHTML = "This photo was taken at a beach in Santa Cruz."
+            }
+            function hideCaption() {
+                document.getElementById("beach").innerHTML = " "
+            }
+        </script>
 </center>
     
 <h2><center>Robotics</center></h2>
