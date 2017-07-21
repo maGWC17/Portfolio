@@ -66,8 +66,16 @@ li a:hover:not(.active) {
 <center><img src="Screen Shot 2017-07-13 at 9.32.18 AM.png" alt="ShapesCode" style="width:600px;height:400px;"></center>
       
 <center>
-<img src="Screen Shot 2017-07-13 at 9.49.22 AM.png" alt="Square" style="width:300px;height:200px;">
-<img src="Screen Shot 2017-07-13 at 2.24.43 PM.png" alt="Octagon" style="width:300px;height:200px;">
+<img src="Screen Shot 2017-07-13 at 9.49.22 AM.png" alt="Square" style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()"> <img src="Screen Shot 2017-07-13 at 2.24.43 PM.png" alt="Octagon" style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()">
+    <p id="shapes"> </p>
+   <script>
+       function showCaption() {
+           document.getElementByID("shapes").innerHTML = "June 28, 2017<br>Based on what I’ve learned so far, similarities between Python and Scratch include the fact that I was able to draw shapes in both programs.<br>One difference is that in Scratch, there are set blocks that you use to program whereas in Python, you are typing every command."
+       }
+       function hideCaption() {
+           document.getElementByID("shapes").innerHTML = " "
+       }
+    </script>
 </center>
       
 <h3><center>Drawing Tessellations</center></h3>
@@ -84,13 +92,13 @@ li a:hover:not(.active) {
 <center><img src="Screen Shot 2017-07-13 at 9.33.20 AM.png" alt="ElephantCode" style="width:600px;height:400px;"></center>
       
 <center>
-<img src="elephant2.jpg" alt=“ElephantBefore” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()"> <img src="elephantrecolored.jpg" alt=“ElephantAfter” style="width:300px;height:200px;" onmouseover="showCaption()" onmouseout="hideCaption()">
+<img src="elephant2.jpg" alt=“ElephantBefore” style="width:300px;height:200px;" onmouseover="showCaption3()" onmouseout="hideCaption3()"> <img src="elephantrecolored.jpg" alt=“ElephantAfter” style="width:300px;height:200px;" onmouseover="showCaption3()" onmouseout="hideCaption3()">
          <p id="elephant"> </p>        
      <script>
-            function showCaption() {
+            function showCaption3() {
                 document.getElementById("elephant").innerHTML = "This photo was taken on a field trip to Monterey Zoo & Vision Quest."
             }
-            function hideCaption() {
+            function hideCaption3() {
                 document.getElementById("elephant").innerHTML = " "
             }
         </script>
@@ -99,13 +107,13 @@ li a:hover:not(.active) {
 <center><img src="Screen Shot 2017-07-13 at 9.32.18 AM.png" alt="BeachCode" style="width:600px;height:400px;"></center>
     
 <center>
-<img src="Beach.jpg" alt=“BeachBefore” style="width:300px;height:200px;" onmouseover="showCaption2()" onmouseout="hideCaption2()"> <img src="beachrecolored.jpg" alt=“BeachAfter” style="width:300px;height:200px;" onmouseover="showCaption2()" onmouseout="hideCaption2()">
+<img src="Beach.jpg" alt=“BeachBefore” style="width:300px;height:200px;" onmouseover="showCaption4()" onmouseout="hideCaption4()"> <img src="beachrecolored.jpg" alt=“BeachAfter” style="width:300px;height:200px;" onmouseover="showCaption4()" onmouseout="hideCaption4()">
         <p id="beach"> </p>        
      <script>
-            function showCaption2() {
+            function showCaption4() {
                 document.getElementById("beach").innerHTML = "This photo was taken at a beach in Santa Cruz."
             }
-            function hideCaption2() {
+            function hideCaption4() {
                 document.getElementById("beach").innerHTML = " "
             }
         </script>
@@ -115,21 +123,30 @@ li a:hover:not(.active) {
       
 <h3><center>Basic Circuit</center></h3>
 
-<center><img src="Circuit.JPG" alt="Circuit" style="width:600px;height:400px;" onmouseover="showCaption3()" onmouseout="hideCaption3()">
+<center><img src="Circuit.JPG" alt="Circuit" style="width:600px;height:400px;" onmouseover="showCaption5()" onmouseout="hideCaption5()">
        <p id="circuit"> </p>
     <script>
-            function showCaption3() {
+            function showCaption5() {
                 document.getElementById("circuit").innerHTML = "July 5, 2017<br>Today, we discussed a lot about robots and their work ethics. Although it seems that robots are the future,<br>I feel slightly nervous about the fact that we could possible build technology that will be smarter than its creators.<br>Working on a circuit with my group, we learned not hook the LED or the transistor directly to the ground."
             }
-            function hideCaption3() {
+            function hideCaption5() {
                 document.getElementById("circuit").innerHTML = " "
             }
     </script>
 </center>
       
 <h3><center>Morse Code (Light Show)</center></h3>
-<center><video width="600" height="400" controls loop>
+<center><video width="600" height="400" controls loop onmouseover="showCaption6()" onmouseout="hideCaption6()">
   <source src="Sisterhood1.mp4" type="video/mp4">
+    <p id="sisterhood"> </p>
+  <script>
+        function showCaption6() {
+            document.getElementById("sisterhood").innerHTML = "
+        }
+      function hideCaption6() {
+          document.getElementById("sisterhood").innerHTML = " "
+      }
+    </script>
     </video></center>
       
 <h3><center>Dancing Robot</center></h3>
